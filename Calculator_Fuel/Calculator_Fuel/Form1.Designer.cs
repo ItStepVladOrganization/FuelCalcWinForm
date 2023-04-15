@@ -1,4 +1,7 @@
-﻿namespace Calculator_Fuel
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Calculator_Fuel
 {
     partial class Form1
     {
@@ -48,6 +51,10 @@
             this.costLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
 
+            this.BackColor = Color.FromArgb(255, 80, 120, 255);
+            this.ForeColor = Color.White;
+            this.Font = new Font("ubuntu", 12, FontStyle.Bold);
+
             // distanceLabel
             this.distanceLabel.AutoSize = true;
             this.distanceLabel.Location = new System.Drawing.Point(12, 15);
@@ -96,6 +103,8 @@
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            calculateButton.ForeColor = Color.WhiteSmoke;
+            calculateButton.FlatStyle = FlatStyle.Popup;
 
             // gallonsLabel
             this.gallonsLabel.AutoSize = true;
@@ -131,7 +140,7 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
+        
         #endregion
     }
 }
