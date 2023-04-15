@@ -16,5 +16,9 @@ namespace Calculator_Fuel
         {
             InitializeComponent();
         }
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
